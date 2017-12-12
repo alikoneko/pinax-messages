@@ -17,6 +17,7 @@
 
 * [About Pinax](#about-pinax)
 * [Overview](#overview)
+  * [History](#history)
   * [Supported Django and Python versions](#supported-django-and-python-versions)
 * [Documentation](#documentation)
   * [Installation](#installation)
@@ -40,7 +41,7 @@ Django apps, themes, and starter project templates. This collection can be found
 
 `pinax-messages` is an app for providing private user-to-user threaded messaging.
 
-#### Project History
+#### History
 
 This app was formerly named `user-messages` but was renamed after being donated to Pinax from Eldarion.
 
