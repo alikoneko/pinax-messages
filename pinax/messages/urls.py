@@ -2,6 +2,8 @@ from django.conf.urls import url
 
 from . import views
 
+app_name = "messages"
+
 urlpatterns = [
     url(r"^inbox/$", views.InboxView.as_view(),
         name="inbox"),

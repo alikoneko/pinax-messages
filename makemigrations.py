@@ -15,7 +15,7 @@ DEFAULT_SETTINGS = dict(
         "pinax.messages",
         "pinax.messages.tests"
     ],
-    MIDDLEWARE_CLASSES=[],
+    MIDDLEWARE=[],
     DATABASES={
         "default": {
             "ENGINE": "django.db.backends.sqlite3",
