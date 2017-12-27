@@ -39,7 +39,9 @@ class InboxView(TemplateView):
         context.update({
             "folder": folder,
             "threads": threads,
-            "threads_unread": Thread.ordered(Thread.unread(self.request.user))
+            "threads_unread": Thread.ordered(Thread.unread(self.request.user)),
+            "title": "Messages - Inbox",
+            "year": datetime.now().year,
         })
         return context
 
