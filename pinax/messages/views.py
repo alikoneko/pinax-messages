@@ -7,6 +7,7 @@ from django.views.generic import (
     TemplateView,
     UpdateView
 )
+from datetime import datetime
 
 from .forms import MessageReplyForm, NewMessageForm, NewMessageFormMultiple
 from .models import Thread
