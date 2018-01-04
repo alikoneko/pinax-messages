@@ -43,9 +43,9 @@ class NewMessageForm(forms.ModelForm):
 
 
 class NewMessageFormMultiple(forms.ModelForm):
-    subject = forms.CharField()
-    to_user = UserModelMultipleChoiceField(get_user_model().objects.none())
-    content = forms.CharField(widget=forms.Textarea)
+    subject = forms.CharField(widget=forms.TextInput())
+    to_user = UserModelMultipleChoiceField(get_user_model().objects.none()))
+    content = forms.CharField(widget=forms.Textarea())
 
     def __init__(self, *args, **kwargs):
         self.user = kwargs.pop("user")
