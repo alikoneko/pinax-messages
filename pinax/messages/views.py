@@ -101,9 +101,9 @@ class MessageCreateView(CreateView):
         if user_id is not None:
             user_id = [int(user_id)]
         elif "to_user" in self.request.GET and self.request.GET["to_user"].isdigit():
-            user_id = map(int, self.request.GET.getlist("to_user"))
+            user_id = list(map(int, self.request.GET.getlist("to_user")))
         if not self.kwargs.get("multiple", False) and user_id:
-            user_id = user_id[0]
+            user_id = list(user_id)[0]
         return {"to_user": user_id}
 
     def get_form_kwargs(self):
